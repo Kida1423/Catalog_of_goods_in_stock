@@ -1,0 +1,98 @@
+#root {
+  width: 100%;;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.catalog{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+table{
+  border-spacing: 0;
+  width: 80%;
+  margin-bottom: 100px;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+thead th, tbody td {
+  border: 1px solid #fff; 
+}
+tr{
+  display: flex;
+}
+tr td{
+  width: 33%;
+}
+table th{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+td p{
+  width: 50%;
+}
+td{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+td a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.arrows{
+  width: 15%;
+}
+th a{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
